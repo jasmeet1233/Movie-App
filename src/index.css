@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+#root {
+  background: #3494e6; 
+  background: -webkit-linear-gradient(
+    to right,
+    #ec6ead,
+    #3494e6
+  ); 
+  background: linear-gradient(
+    to right,
+    #ec6ead,
+    #3494e6
+  ); 
+}
+
+h2 {
+  font-size: 1.2rem;
+  padding-bottom: 0.4rem;
+}
+
+.flex-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-content: space-around; */
+  color: white;
+}
+
+.flex-child {
+  height: 22rem;
+  width: 14rem;
+  margin: 1.2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  /*      */
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.flex-child img {
+  width: 100%;
+  height: 70%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.flex-child button {
+  bottom: 0px;
+  width: 100%;
+  height: 2rem;
+  width: 95%;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: rgb(37, 131, 63);
+  background-image: var(--darkreader-bgimg--bs-gradient);
+  border-color: rgb(42, 150, 72);
+  box-shadow: rgb(14 17 21 / 7%) 0px 1px 1px;
+  color: white;
+}
+
+.flex-child button:hover {
+  background-color: #4aab41;
+  cursor: pointer;
+}
+
+.genre {
+  font-size: 0.8rem;
+}
+
+.single-parent {
+    display: flex;
+    padding: 2rem;
+    height: 100vh;
+}
+
+.singleflex-child1 {
+    width: 40%;
+    height: 15rem;
+    max-width: 11rem;
+}
+
+.singleflex-child2 {
+    text-align: center;
+    padding: 1.3rem;
+}
+
+.singleflex-child2 h1 {
+    padding-bottom: 1rem;
+}
+
+.language {
+    padding-bottom: .7rem;
+    font-size: .95rem;
+}
+
+.home {
+    text-align: center;
+    margin: 2.2rem;
+}
+
+.home button {
+    padding: .7rem;
+    border-radius: 1rem;
+    border-style: none;
+     background-color: rgb(37, 131, 63);
+  background-image: var(--darkreader-bgimg--bs-gradient);
+  border-color: rgb(42, 150, 72);
+  box-shadow: rgb(14 17 21 / 7%) 0px 1px 1px;
+  color: white;
+}
+
+.home button:hover {
+  background-color: #4aab41;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .flex-child {
+    width: 15.5rem;
+  }
+}
