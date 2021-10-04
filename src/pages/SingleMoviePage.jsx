@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import { Link, useParams } from 'react-router-dom';
-import ReactHtmlParser from "react-html-parser";
 
 const SingleMoviePage = () => {
      const [singleMovie, setSingleMovie] = useState([]);
@@ -47,7 +46,7 @@ const SingleMoviePage = () => {
           <div className="singleflex-child2">
             <h1>{name}</h1>
             <p className="language">Language: {language}</p>
-            {ReactHtmlParser(summary)}
+            <div dangerouslySetInnerHTML={{__html: summary}}></div>
             <p className="home">
               <Link to="/">
               <button>Back Home</button>
